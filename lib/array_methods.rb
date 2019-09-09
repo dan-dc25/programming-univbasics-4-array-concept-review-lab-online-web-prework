@@ -7,12 +7,13 @@ def find_element_index(array, value_to_find)
      count += 1
    end
 end
-
+require "pry"
 def find_max_value(array)
   count = 0
   while array[count] do
     return count.max
-    count += 1  
+    binding.pry
+    count += 1
   end
 end
 
